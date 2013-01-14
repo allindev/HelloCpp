@@ -8,10 +8,10 @@ LOCAL_MODULE_FILENAME := libhellocpp
 
 LOCAL_SRC_FILES := hellocpp/main.cpp \
                    ../../Classes/AppDelegate.cpp \
-                   ../../Classes/ODSocket.cpp \
-                   ../../Classes/Player.cpp \
+                   ../../Classes/HelloWorldScene.cpp \
                    ../../Classes/GameNet.cpp \
-                   ../../Classes/HelloWorldScene.cpp
+                   ../../Classes/Player.cpp \
+                   ../../Classes/ODSocket.cpp
 
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../Classes
 

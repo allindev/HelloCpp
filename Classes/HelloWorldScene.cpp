@@ -63,9 +63,8 @@ bool HelloWorld::init() {
 	// add the sprite as a child to this layer
 	this->addChild(pSprite, 0);
 
-	CCSprite* pSprite2 = CCSprite::create("CloseNormal2.png");
-//	pSprite2->setPosition(ccp(200,200));
-//	this->addChild(pSprite2, -1);
+	CCTextureCache::sharedTextureCache()->addImage("Target.png");
+	CCTextureCache::sharedTextureCache()->addImage("Player.png");
 
 	gameNet.init(this);
 

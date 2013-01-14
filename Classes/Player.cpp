@@ -46,9 +46,9 @@ bool Player::init(PUD pud, CCLayer* pLayer){
 	CCLog("Player::create -> CCSprite::create('CloseNormal.png'), player.spriteFlag:%d:",this->spriteFlag);
 	CCSprite* sprite;
 	if(pud.session % 2 == 0){
-		sprite = CCSprite::create("CloseNormal.png");
+		sprite = CCSprite::create("Target.png");
 	}else {
-		sprite = CCSprite::create("CloseNormal2.png");
+		sprite = CCSprite::create("Player.png");
 	}
 	sprite->setPosition(ccp(pud.x1,pud.y1));
 	this->pLayer->addChild(sprite, 1, this->spriteFlag);
